@@ -27,17 +27,24 @@ function App() {
           {/* Center aligned container */}
           <div className="flex items-center justify-center w-full">
             {/* Logo and title container */}
-            <div className="flex flex-col items-center justify-center space-x-4">
-              {/* Logo image */}
-              <img 
-                src={pfcLogo}
-                alt="PFC Logo" 
-                className="w-16 h-16 object-contain"
-              />
-              {/* Title */}
-              <span className="text-2xl font-bold bg-gradient-to-r text-[#00a6a2]  bg-clip-text text-center">
-                PARISHUDHATMA FELLOWSHIP MINISTRIES
-              </span>
+            <div className="flex flex-col items-center justify-center space-y-3">
+              {/* Logo container with hover effect */}
+              <div className="relative group">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#00a6a2] to-yellow-500 rounded-full opacity-30 group-hover:opacity-100 transition duration-500"></div>
+                <div className="relative bg-white rounded-full p-2 shadow-lg transform group-hover:scale-105 transition duration-500">
+                  <img 
+                    src={pfcLogo}
+                    alt="College Logo" 
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
+              </div>
+              {/* Title with animation */}
+              <div className="text-center transform hover:scale-105 transition duration-300">
+                <span className="text-[26px] font-bold text-[#00a6a2] tracking-wide hover:text-yellow-500 transition-colors duration-300">
+                  LIGHT TO THE WORLD
+                </span>
+              </div>
             </div>
           </div>
 
@@ -102,18 +109,21 @@ function App() {
                 <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                   Bolt
                 </span> */}
-                  <div className="flex flex-col items-center justify-center space-x-4">
-              {/* Logo image */}
-              <img 
-                src={pfcLogo}
-                alt="PFC Logo" 
-                className="w-12 h-12 object-contain"
-              />
-              {/* Title */}
-              <span className="text-[14px] font-bold bg-gradient-to-r text-[#00a6a2]  bg-clip-text text-center">
-              PARISHUDHATMA FELLOWSHIP MINISTRIES
-              </span>
-            </div>
+                  <div className="flex flex-col items-center justify-center space-y-3 py-2">
+                <div className="relative group">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#00a6a2] to-yellow-500 rounded-full opacity-30 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative bg-white rounded-full p-1.5 shadow-md transform group-hover:scale-105 transition duration-500">
+                    <img 
+                      src={pfcLogo}
+                      alt="College Logo" 
+                      className="w-14 h-14 object-contain"
+                    />
+                  </div>
+                </div>
+                <span className="text-[16px] font-bold text-[#00a6a2] tracking-wide hover:text-yellow-500 transition-colors duration-300">
+                  LIGHT TO THE WORLD
+                </span>
+              </div>
               </div>
               <button
                 onClick={toggleSidebar}
@@ -306,21 +316,23 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <div className="space-y-4">
-              <div className="flex items-center justify-center space-x-2">
+              <div className="flex items-center justify-center space-y-3">
                 {/* <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
                   <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">B</span>
                 </div>
                 <span className="text-2xl font-bold">Bolt</span> */}
-                  <div className="flex items-center justify-center space-x-4">
-              {/* Logo image */}
-              <img 
-                src={pfcLogo}
-                alt="PFC Logo" 
-                className="w-20 h-20 object-contain"
-              />
-              {/* Title */}
-             
-            </div>
+                  <div className="flex flex-col items-center justify-center space-y-3">
+                <div className="relative group">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-white to-yellow-200 rounded-full opacity-30 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-2 transform group-hover:scale-105 transition duration-500">
+                    <img 
+                      src={pfcLogo}
+                      alt="College Logo" 
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
               </div>
               {/* <p className="text-blue-100 text-sm">
                 Building the future of web applications with modern tools and technologies.
